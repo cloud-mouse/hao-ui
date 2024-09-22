@@ -52,7 +52,7 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0
       postcss-for:
-        specifier: 2.1.1
+        specifier: ^2.1.1
         version: 2.1.1
       postcss-nested:
         specifier: ^6.0.1
