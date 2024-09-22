@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter @hao-ui/playground dev",
+    "book": "pnpm --filter @hao-ui/playground storybook",
     "docs:dev": "pnpm --filter @hao-ui/docs dev",
     "docs:build": "pnpm --filter @hao-ui/docs build",
-    "test": "echo \"todo\""
+    "test": "pnpm --filter @hao-ui/components test"
   },
   "keywords": [],
   "author": "",

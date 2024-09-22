@@ -1,1 +1,67 @@
 @import './reset.css';
+
+:root {
+  /* colors */
+  --hao-color-white: #ffffff;
+  --hao-color-black: #000000;
+  --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
+  --hao-bg-color: #ffffff;
+  --hao-bg-color-page: #f2f3f5;
+  --hao-bg-color-overlay: #ffffff;
+  --hao-text-color-primary: #303133;
+  --hao-text-color-regular: #606266;
+  --hao-text-color-secondary: #909399;
+  --hao-text-color-placeholder: #a8abb2;
+  --hao-text-color-disabled: #c0c4cc;
+  --hao-border-color: #dcdfe6;
+  --hao-border-color-light: #e4e7ed;
+  --hao-border-color-lighter: #ebeef5;
+  --hao-border-color-extra-light: #f2f6fc;
+  --hao-border-color-dark: #d4d7de;
+  --hao-border-color-darker: #cdd0d6;
+  --hao-fill-color: #f0f2f5;
+  --hao-fill-color-light: #f5f7fa;
+  --hao-fill-color-lighter: #fafafa;
+  --hao-fill-color-extra-light: #fafcff;
+  --hao-fill-color-dark: #ebedf0;
+  --hao-fill-color-darker: #e6e8eb;
+  --hao-fill-color-blank: #ffffff;
+
+  @each $val, $color in var(--colors) {
+    --hao-color-$(val): $(color);
+    @for $i from 3 to 9 {
+      --hao-color-$(val)-light-$(i): mix(#fff, $(color), 0$ (i));
+    }
+    --hao-color-$(val)-dark-2: mix(#000, $(color), 0.2);
+  }
+
+  /* border */
+  --hao-border-width: 1px;
+  --hao-border-style: solid;
+  --hao-border-color-hover: var(--hao-text-color-disabled);
+  --hao-border: var(--hao-border-width) var(--hao-border-style) var(--hao-border-color);
+  --hao-border-radius-base: 4px;
+  --hao-border-radius-small: 2px;
+  --hao-border-radius-round: 20px;
+  --hao-border-radius-circle: 100%;
+
+  /*font*/
+  --hao-font-size-extra-large: 20px;
+  --hao-font-size-large: 18px;
+  --hao-font-size-medium: 16px;
+  --hao-font-size-base: 14px;
+  --hao-font-size-small: 13px;
+  --hao-font-size-extra-small: 12px;
+  --hao-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  --hao-font-weight-primary: 500;
+
+  /*disabled*/
+  --hao-disabled-bg-color: var(--hao-fill-color-light);
+  --hao-disabled-text-color: var(--hao-text-color-placeholder);
+  --hao-disabled-border-color: var(--hao-border-color-light);
+
+  /*animation*/
+  --hao-transition-duration: 0.4s;
+  --hao-transition-duration-fast: 0.2s;
+}

@@ -1,0 +1,199 @@
+.hao-button-group {
+  --hao-button-group-border-color: var(--hao-border-color-lighter);
+}
+.hao-button {
+  --hao-button-font-weight: var(--hao-font-weight-primary);
+  --hao-button-border-color: var(--hao-border-color);
+  --hao-button-bg-color: var(--hao-fill-color-blank);
+  --hao-button-text-color: var(--hao-text-color-regular);
+  --hao-button-disabled-text-color: var(--hao-disabled-text-color);
+  --hao-button-disabled-bg-color: var(--hao-fill-color-blank);
+  --hao-button-disabled-border-color: var(--hao-border-color-light);
+  --hao-button-hover-text-color: var(--hao-color-primary);
+  --hao-button-hover-bg-color: var(--hao-color-primary-light-9);
+  --hao-button-hover-border-color: var(--hao-color-primary-light-7);
+  --hao-button-active-text-color: var(--hao-button-hover-text-color);
+  --hao-button-active-border-color: var(--hao-color-primary);
+  --hao-button-active-bg-color: var(--hao-button-hover-bg-color);
+  --hao-button-outline-color: var(--hao-color-primary-light-5);
+  --hao-button-active-color: var(--hao-text-color-primary);
+}
+
+.hao-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  height: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--hao-button-text-color);
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.1s;
+  font-weight: var(--hao-button-font-weight);
+  user-select: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background-color: var(--hao-button-bg-color);
+  border: var(--hao-border);
+  border-color: var(--hao-button-border-color);
+  padding: 8px 15px;
+  font-size: var(--hao-font-size-base);
+  border-radius: var(--hao-border-radius-base);
+  & + & {
+    margin-left: 12px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--hao-button-hover-text-color);
+    border-color: var(--hao-button-hover-border-color);
+    background-color: var(--hao-button-hover-bg-color);
+    outline: none;
+  }
+  &:active {
+    color: var(--hao-button-active-text-color);
+    border-color: var(--hao-button-active-border-color);
+    background-color: var(--hao-button-active-bg-color);
+    outline: none;
+  }
+  /*plain*/
+  &.is-plain {
+    --hao-button-hover-text-color: var(--hao-color-primary);
+    --hao-button-hover-bg-color: var(--hao-fill-color-blank);
+    --hao-button-hover-border-color: var(--hao-color-primary);
+  }
+  /*round*/
+  &.is-round {
+    border-radius: var(--hao-border-radius-round);
+  }
+  /*circle*/
+  &.is-circle {
+    border-radius: 50%;
+    padding: 8px;
+  }
+  /*disabled*/
+  &.is-loading,
+  &.is-disabled,
+  &.is-disabled:hover,
+  &.is-disabled:focus,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus {
+    color: var(--hao-button-disabled-text-color);
+    cursor: not-allowed;
+    background-image: none;
+    background-color: var(--hao-button-disabled-bg-color);
+    border-color: var(--hao-button-disabled-border-color);
+  }
+  [class*='hao-icon'] {
+    width: 1em;
+    height: 1em;
+  }
+}
+@each $val in primary, success, warning, info, danger {
+  .hao-button--$(val) {
+    --hao-button-text-color: var(--hao-color-white);
+    --hao-button-bg-color: var(--hao-color-$(val));
+    --hao-button-border-color: var(--hao-color-$(val));
+    --hao-button-outline-color: var(--hao-color-$(val)-light-5);
+    --hao-button-active-color: var(--hao-color-$(val)-dark-2);
+    --hao-button-hover-text-color: var(--hao-color-white);
+    --hao-button-hover-bg-color: var(--hao-color-$(val)-light-3);
+    --hao-button-hover-border-color: var(--hao-color-$(val)-light-3);
+    --hao-button-active-bg-color: var(--hao-color-$(val)-dark-2);
+    --hao-button-active-border-color: var(--hao-color-$(val)-dark-2);
+    --hao-button-disabled-text-color: var(--hao-color-white);
+    --hao-button-disabled-bg-color: var(--hao-color-$(val)-light-5);
+    --hao-button-disabled-border-color: var(--hao-color-$(val)-light-5);
+  }
+  .hao-button--$(val).is-plain {
+    --hao-button-text-color: var(--hao-color-$(val));
+    --hao-button-bg-color: var(--hao-color-$(val)-light-9);
+    --hao-button-border-color: var(--hao-color-$(val)-light-5);
+    --hao-button-hover-text-color: var(--hao-color-white);
+    --hao-button-hover-bg-color: var(--hao-color-$(val));
+    --hao-button-hover-border-color: var(--hao-color-$(val));
+    --hao-button-active-text-color: var(--hao-color-white);
+
+    --hao-button-disabled-text-color: var(--hao-color-$(val)-light-5);
+    --hao-button-disabled-bg-color: var(--hao-color-$(val)-light-9);
+    --hao-button-disabled-border-color: var(--hao-color-$(val)-light-8);
+  }
+}
+.hao-button--large {
+  --hao-button-size: 40px;
+  height: var(--hao-button-size);
+  padding: 12px 19px;
+  font-size: var(--hao-font-size-base);
+  border-radius: var(--hao-border-radius-base);
+  /*circle*/
+  &.is-circle {
+    border-radius: 50%;
+    padding: 12px;
+  }
+}
+.hao-button--small {
+  --hao-button-size: 24px;
+  height: var(--hao-button-size);
+  padding: 5px 11px;
+  font-size: 12px;
+  border-radius: calc(var(--hao-border-radius-base) - 1px);
+  /*circle*/
+  &.is-circle {
+    border-radius: 50%;
+    padding: 5px;
+  }
+  [class*='hao-icon'] {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.hao-button-group {
+  display: inline-block;
+  vertical-align: middle;
+
+  &::after {
+    clear: both;
+  }
+  & > :deep(.hao-button) {
+    float: left;
+    position: relative;
+    margin-left: 0;
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right-color: var(--hao-button-group-border-color);
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left-color: var(--hao-button-group-border-color);
+    }
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+
+      border-left-color: var(--hao-button-group-border-color);
+      border-right-color: var(--hao-button-group-border-color);
+    }
+    &:not(:last-child) {
+      margin-right: -1px;
+    }
+    &:first-child:last-child {
+      border-top-right-radius: var(--hao-border-radius-base);
+      border-bottom-right-radius: var(--hao-border-radius-base);
+      border-top-left-radius: var(--hao-border-radius-base);
+      border-bottom-left-radius: var(--hao-border-radius-base);
+
+      &.is-round {
+        border-radius: var(--hao-border-radius-round);
+      }
+
+      &.is-circle {
+        border-radius: 50%;
+      }
+    }
+  }
+}
