@@ -7,7 +7,7 @@
     "dev": "pnpm --filter @hao-ui/playground dev",
     "docs:dev": "pnpm --filter @hao-ui/docs dev",
     "docs:build": "pnpm --filter @hao-ui/docs build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"todo\""
   },
   "keywords": [],
   "author": "",
