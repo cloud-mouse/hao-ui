@@ -2,10 +2,11 @@
   "name": "hao-ui",
   "version": "1.0.0",
   "description": "Components Library by Vue3 + Ts",
+  "type": "module",
   "files": [
     "dist"
   ],
-  "main": "index.ts",
+  "main": "./dist/umd/index.umd.cjs",
   "module": "./dist/es/index.js",
   "types": "./dist/types/core/index.d.ts",
   "exports": {
