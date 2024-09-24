@@ -1,6 +1,7 @@
-import { HaoButton } from '@hao-ui/components'
+import { HaoButton, HaoIcon } from '@hao-ui/components'
 import type { Plugin } from 'vue'
 
 export default [
-  HaoButton
+  HaoButton,
+  HaoIcon
 ] as Plugin[]

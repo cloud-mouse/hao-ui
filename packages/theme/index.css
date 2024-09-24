@@ -4,7 +4,13 @@
   /* colors */
   --hao-color-white: #ffffff;
   --hao-color-black: #000000;
-  --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
+  --colors: (
+    primary: #409eff,
+    success: #67c23a,
+    warning: #e6a23c,
+    danger: #f56c6c,
+    info: #909399
+  );
   --hao-bg-color: #ffffff;
   --hao-bg-color-page: #f2f3f5;
   --hao-bg-color-overlay: #ffffff;
@@ -39,7 +45,8 @@
   --hao-border-width: 1px;
   --hao-border-style: solid;
   --hao-border-color-hover: var(--hao-text-color-disabled);
-  --hao-border: var(--hao-border-width) var(--hao-border-style) var(--hao-border-color);
+  --hao-border: var(--hao-border-width) var(--hao-border-style)
+    var(--hao-border-color);
   --hao-border-radius-base: 4px;
   --hao-border-radius-small: 2px;
   --hao-border-radius-round: 20px;
@@ -52,8 +59,9 @@
   --hao-font-size-base: 14px;
   --hao-font-size-small: 13px;
   --hao-font-size-extra-small: 12px;
-  --hao-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
-    '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  --hao-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial,
+    sans-serif;
   --hao-font-weight-primary: 500;
 
   /*disabled*/
