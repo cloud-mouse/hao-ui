@@ -49,6 +49,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@popperjs/core": "^2.11.8",
     "async-validator": "^4.2.5",
+    "@vitepress-preview/component": "workspace:*",
     "hao-ui": "workspace:*",
     "lodash-es": "^4.17.21",
     "vue": "^3.4.19"
