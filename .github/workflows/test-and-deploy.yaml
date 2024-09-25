@@ -44,10 +44,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build docs
-        run: npm run docs:build
+      - name: Build
+        run: npm run build
 
-      - name: Move css
+      - name: Move style
         run: npm run move-style
 
       - name: Build docs
