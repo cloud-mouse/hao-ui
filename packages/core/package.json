@@ -29,7 +29,8 @@
     "build-es": "vite build --config build/vite.es.config.ts",
     "build-umd": "vite build --config build/vite.umd.config.ts",
     "build-es:watch": "vite build --watch --config build/vite.es.config.ts",
-    "build-umd:watch": "vite build --watch --config build/vite.umd.config.ts"
+    "build-umd:watch": "vite build --watch --config build/vite.umd.config.ts",
+    "move-style": "move-file dist/es/index.css dist/index.css"
   },
   "keywords": [],
   "author": "",

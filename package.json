@@ -9,7 +9,8 @@
     "docs:dev": "pnpm --filter @hao-ui/docs dev",
     "docs:build": "pnpm --filter @hao-ui/docs build",
     "test": "pnpm --filter @hao-ui/components test",
-    "build": "pnpm --filter hao-ui build"
+    "build": "pnpm --filter hao-ui build",
+    "move-style": "pnpm --filter hao-ui move-style"
   },
   "keywords": [],
   "author": "",

@@ -47,6 +47,12 @@ jobs:
       - name: Build docs
         run: npm run docs:build
 
+      - name: Move css
+        run: npm run move-style
+
+      - name: Build docs
+        run: npm run docs:build
+
       - name: Upload docs
         uses: actions/upload-artifact@v3
         with:
