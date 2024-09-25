@@ -30,7 +30,7 @@ createApp(App).use(ErElement).mount('#app')
 
 ```vue
 <template>
-  <er-button>我是 Button</er-button>
+  <hao-button>我是 Button</hao-button>
 </template>
 ```
 
@@ -40,10 +40,10 @@ Eric-UI 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
 
 ```vue
 <template>
-  <er-button>我是 Button</er-button>
+  <hao-button>我是 Button</hao-button>
 </template>
 <script>
-import { ErButton } from ' er-element'
+import { ErButton } from ' hao-ui'
 export default {
   components: { ErButton },
 }
@@ -67,5 +67,5 @@ export default {
 * 亮点4 📚：“新”，使用目前2024年 Vue3 周边最新 ，最全技术：Vue3.4 + Typescript4， Vite，Vitest， Vitepress，Vue-test-utils2，Rollup, Postcss 一网打尽。
 * 亮点5 🎉：“难”，难度逐渐上升，高薪必备敲门砖，包括：Message - Select - Form 这种高难度高复杂组件。
 * 亮点6 🌹：单元测试，被常年忽略但是非常重要的内容，简历加分项，使用最新的 Vitest，Vue-test-utils2 完成单元测试。
-* 亮点7 📚:  文档生成工具，组件库打包和发布以及其他周边流程应有尽有，提供一揽子解决方案。
+* 亮点7 📚: 文档生成工具，组件库打包和发布以及其他周边流程应有尽有，提供一揽子解决方案。
 * 亮点8 📦: 长期维护以及更新，会根据同学的反馈每年更新几个高频组件。 -->

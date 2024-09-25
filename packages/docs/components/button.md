@@ -2,9 +2,9 @@
 title: Button
 description: Button 组件文档
 
-next:
-  link: /components/collapse
-  text: Collapse 折叠面板
+# next:
+#   link: /components/collapse
+#   text: Collapse 折叠面板
 
 prev:
   link: /get-started
