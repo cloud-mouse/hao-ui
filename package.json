@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run build && pnpm --filter @hao-ui/playground dev",
-    "book": "pnpm run build && pnpm --filter @hao-ui/playground storybook",
+    "dev": "pnpm --filter @hao-ui/playground dev",
+    "book": "pnpm --filter @hao-ui/playground storybook",
     "docs:dev": "pnpm --filter @hao-ui/docs dev",
     "docs:build": "pnpm --filter @hao-ui/docs build",
     "test": "pnpm --filter @hao-ui/components test",
