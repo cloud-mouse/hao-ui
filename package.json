@@ -1,16 +1,16 @@
 {
-  "name": "@hao-ui/workspace",
+  "name": "@z-zimo-ui/workspace",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --filter @hao-ui/playground dev",
-    "book": "pnpm --filter @hao-ui/playground storybook",
-    "docs:dev": "pnpm --filter @hao-ui/docs dev",
-    "docs:build": "pnpm --filter @hao-ui/docs build",
-    "test": "pnpm --filter @hao-ui/components test",
-    "build": "pnpm --filter hao-ui build",
-    "move-style": "pnpm --filter hao-ui move-style"
+    "dev": "pnpm --filter @z-zimo-ui/playground dev",
+    "book": "pnpm --filter @z-zimo-ui/playground storybook",
+    "docs:dev": "pnpm --filter @z-zimo-ui/docs dev",
+    "docs:build": "pnpm --filter @z-zimo-ui/docs build",
+    "test": "pnpm --filter @z-zimo-ui/components test",
+    "build": "pnpm --filter z-zimo-ui build",
+    "move-style": "pnpm --filter z-zimo-ui move-style"
   },
   "keywords": [],
   "author": "",
@@ -41,17 +41,17 @@
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
-    "@hao-ui/components": "workspace:*",
-    "@hao-ui/hooks": "workspace:*",
-    "@hao-ui/theme": "workspace:*",
-    "@hao-ui/utils": "workspace:*",
+    "@z-zimo-ui/components": "workspace:*",
+    "@z-zimo-ui/hooks": "workspace:*",
+    "@z-zimo-ui/theme": "workspace:*",
+    "@z-zimo-ui/utils": "workspace:*",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@popperjs/core": "^2.11.8",
     "async-validator": "^4.2.5",
     "@vitepress-preview/component": "workspace:*",
-    "hao-ui": "workspace:*",
+    "z-zimo-ui": "workspace:*",
     "lodash-es": "^4.17.21",
     "vue": "^3.4.19"
   }
