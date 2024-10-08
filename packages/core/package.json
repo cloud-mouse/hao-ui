@@ -24,7 +24,7 @@
     "./dist/index.css"
   ],
   "scripts": {
-    "build": "run-s clean build-only move-style",
+    "build": "run-s clean build-only",
     "build-only": "run-p build-es build-umd",
     "build:watch": "run-p build-es:watch build-umd:watch",
     "build-es": "vite build --config build/vite.es.config.ts",
