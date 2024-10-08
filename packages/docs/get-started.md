@@ -44,7 +44,7 @@ createApp(App).use(ZZimoUI).mount('#app')
 
 **单个导入**
 
-Eric-UI 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
+Z-Zimo-UI 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
 
 ```vue
 <template>
