@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: Hao-UI 组件库
+  name: Z-Zimo-UI 组件库
   text: 仿 ElementPlus
   tagline: 基于 Vue3 + TS 开发的组件库
   actions:
