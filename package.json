@@ -34,6 +34,8 @@
     "postcss-for": "^2.1.1",
     "postcss-nested": "^6.0.1",
     "prettier": "^3.3.3",
+    "release-it": "^17.7.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.6.2",
     "vite": "^5.1.4",
     "vite-plugin-dts": "^3.9.1",
@@ -41,18 +43,18 @@
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
-    "@z-zimo-ui/components": "workspace:*",
-    "@z-zimo-ui/hooks": "workspace:*",
-    "@z-zimo-ui/theme": "workspace:*",
-    "@z-zimo-ui/utils": "workspace:*",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@popperjs/core": "^2.11.8",
-    "async-validator": "^4.2.5",
     "@vitepress-preview/component": "workspace:*",
-    "z-zimo-ui": "workspace:*",
+    "@z-zimo-ui/components": "workspace:*",
+    "@z-zimo-ui/hooks": "workspace:*",
+    "@z-zimo-ui/theme": "workspace:*",
+    "@z-zimo-ui/utils": "workspace:*",
+    "async-validator": "^4.2.5",
     "lodash-es": "^4.17.21",
-    "vue": "^3.4.19"
+    "vue": "^3.4.19",
+    "z-zimo-ui": "workspace:*"
   }
 }
