@@ -19,7 +19,7 @@ npm i @z-zimo-ui --save
 
 ```js
 // 引入所有组件
-import HaoUI from 'z-zimo-ui'
+import ZZimoUI from 'z-zimo-ui'
 // 引入样式
 import 'z-zimo-ui/dist/style.css'
 

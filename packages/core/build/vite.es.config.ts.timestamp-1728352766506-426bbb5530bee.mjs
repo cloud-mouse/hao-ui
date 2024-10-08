@@ -1,11 +1,11 @@
 // build/vite.es.config.ts
-import { defineConfig } from "file:///H:/open-source/Hao-UI/node_modules/.pnpm/vite@5.4.7_@types+node@20.11.20_sass@1.79.3_terser@5.33.0/node_modules/vite/dist/node/index.js";
+import { defineConfig } from "file:///H:/open-source/Z-Zimo-UI/node_modules/.pnpm/vite@5.4.7_@types+node@20.11.20_sass@1.79.3_terser@5.33.0/node_modules/vite/dist/node/index.js";
 import { readdirSync } from "fs";
-import { filter, map, includes } from "file:///H:/open-source/Hao-UI/node_modules/.pnpm/lodash-es@4.17.21/node_modules/lodash-es/lodash.js";
-import vue from "file:///H:/open-source/Hao-UI/node_modules/.pnpm/@vitejs+plugin-vue@5.1.4_vite@5.4.7_@types+node@20.11.20_sass@1.79.3_terser@5.33.0__vue@3.5.8_typescript@5.6.2_/node_modules/@vitejs/plugin-vue/dist/index.mjs";
+import { filter, map, includes } from "file:///H:/open-source/Z-Zimo-UI/node_modules/.pnpm/lodash-es@4.17.21/node_modules/lodash-es/lodash.js";
+import vue from "file:///H:/open-source/Z-Zimo-UI/node_modules/.pnpm/@vitejs+plugin-vue@5.1.4_vite@5.4.7_@types+node@20.11.20_sass@1.79.3_terser@5.33.0__vue@3.5.8_typescript@5.6.2_/node_modules/@vitejs/plugin-vue/dist/index.mjs";
 import { resolve } from "path";
-import dts from "file:///H:/open-source/Hao-UI/node_modules/.pnpm/vite-plugin-dts@3.9.1_@types+node@20.11.20_rollup@4.22.4_typescript@5.6.2_vite@5.4.7_@types+n_dlg4df5tij5dcbzf45d5m7lw5y/node_modules/vite-plugin-dts/dist/index.mjs";
-var __vite_injected_original_dirname = "H:\\open-source\\Hao-UI\\packages\\core\\build";
+import dts from "file:///H:/open-source/Z-Zimo-UI/node_modules/.pnpm/vite-plugin-dts@3.9.1_@types+node@20.11.20_rollup@4.22.4_typescript@5.6.2_vite@5.4.7_@types+n_dlg4df5tij5dcbzf45d5m7lw5y/node_modules/vite-plugin-dts/dist/index.mjs";
+var __vite_injected_original_dirname = "H:\\open-source\\Z-Zimo-UI\\packages\\core\\build";
 function getDirectoriesSync(basePath) {
   const entries = readdirSync(basePath, { withFileTypes: true });
   return map(
@@ -25,7 +25,7 @@ var vite_es_config_default = defineConfig({
     outDir: "dist/es",
     lib: {
       entry: resolve(__vite_injected_original_dirname, "../index.ts"),
-      name: "HaoUI",
+      name: "ZZimoUI",
       fileName: "index",
       formats: ["es"]
     },
