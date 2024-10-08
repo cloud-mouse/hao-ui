@@ -9,8 +9,16 @@ next:
 
 ## 安装
 
+use npm
+
 ```bash
-npm i @z-zimo-ui --save
+npm i z-zimo-ui --save
+```
+
+use pnpm
+
+```bash
+pnpm i z-zimo-ui --save
 ```
 
 ## 开始使用
@@ -21,11 +29,11 @@ npm i @z-zimo-ui --save
 // 引入所有组件
 import ZZimoUI from 'z-zimo-ui'
 // 引入样式
-import 'z-zimo-ui/dist/style.css'
+import 'z-zimo-ui/dist/index.css'
 
 import App from './App.vue'
 // 全局使用
-createApp(App).use(ErElement).mount('#app')
+createApp(App).use(ZZimoUI).mount('#app')
 ```
 
 ```vue
@@ -43,9 +51,9 @@ Eric-UI 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
   <hao-button>我是 Button</hao-button>
 </template>
 <script>
-import { ErButton } from ' z-zimo-ui'
+import { HaoButton } from 'z-zimo-ui'
 export default {
-  components: { ErButton },
+  components: { HaoButton },
 }
 </script>
 ```
